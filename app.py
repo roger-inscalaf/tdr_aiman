@@ -23,7 +23,7 @@ if uploaded_file is not None:
     if label == 3:
         st.subheader("L'escàner és sa")
         
-        
+"""        
 st.title("                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ")
 #st.divider()
 st.title("Dades gràfiques del model d'Intel·ligència artificial (100 èpoques, 512 lots i 0,001 learning rate) ")     
@@ -43,3 +43,4 @@ st.header("Pèrdua per èpoques")
 
 image = Image.open('Loss per epoch (100 epochs, 512 batch size, 0,001 learning rate).png')
 st.image(image, caption='',use_column_width=False)
+"""
