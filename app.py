@@ -22,9 +22,8 @@ if uploaded_file is not None:
     if label == 3:
         st.subheader("L'escàner és sa")
         
-st.title("                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ")
-#st.divider()
-st.title("Dades gràfiques del model d'Intel·ligència artificial (100 èpoques, 512 lots i 0,001 learning rate) ")     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+st.title("Dades gràfiques del model d'Intel·ligència artificial (100 èpoques, 512 lots i 0,001 learning rate) ")
 st.header("Matriu de confusió")
 
 image = Image.open('Matriu de confusió (100 èpoques, 512 lots i 0,001 learning rate).png')
