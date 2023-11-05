@@ -2,8 +2,7 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 from img_classification import teachable_machine_classification
-st.set_page_config(layout="wide")
-#st.divider()
+
 st.title("Diagnòstic MRI de tumors cerebrals amb IRM")
 st.header("Brain Tumor MRI Classification")
 
@@ -23,24 +22,3 @@ if uploaded_file is not None:
     if label == 3:
         st.subheader("L'escàner és sa")
         
-"""        
-st.title("                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ")
-#st.divider()
-st.title("Dades gràfiques del model d'Intel·ligència artificial (100 èpoques, 512 lots i 0,001 learning rate) ")     
-st.header("Matriu de confusió")
-
-image = Image.open('Matriu de confusió (100 èpoques, 512 lots i 0,001 learning rate).png')
-st.image(image, caption='',use_column_width=False)
-
-st.title("                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ")
-st.header("Precisió per èpoques")
-
-image = Image.open('Accuracy per epoch (100 epochs, 512 batch size, o,001 learning rate).png')
-st.image(image, caption='',use_column_width=False)
-
-st.title("                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ")
-st.header("Pèrdua per èpoques")
-
-image = Image.open('Loss per epoch (100 epochs, 512 batch size, 0,001 learning rate).png')
-st.image(image, caption='',use_column_width=False)
-"""
